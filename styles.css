@@ -1,4 +1,4 @@
-#wrapper {
+#categoryColumn {
 	display: flex;
 	flex-direction: column;
 	width: 40px;
@@ -17,6 +17,20 @@
 	width: 90px;
 	height: 60px;
 	text-align: center;
-	line-height: 50px;
 	font-weight: bold;
+}
+
+body {
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+}
+
+#gameboard {
+	width: 100%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
