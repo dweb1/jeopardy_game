@@ -13,11 +13,28 @@
 			<div class="box">
 				<h3 id="category">LITERATURE</h3>
 			</div>
-			<div class="box questionButton" id="firstQuestionButton">$10</div>
-			<div class="box questionButton" id="secondQuestionButton">$20</div>
-			<div class="box questionButton" id="thirdQuestionButton">$30</div>
-			<div class="box questionButton" id="fourthQuestionButton">$40</div>
-			<div class="box questionButton" id="fifthQuestionButton">$50</div>
+			<div class="box questionButton" id="firstQuestionButton" data-toggle="modal" data-target="#myModal">$10</div>
+			<div class="box questionButton" id="secondQuestionButton" data-toggle="modal" data-target="#myModal">$20</div>
+			<div class="box questionButton" id="thirdQuestionButton" data-toggle="modal" data-target="#myModal">$30</div>
+			<div class="box questionButton" id="fourthQuestionButton" data-toggle="modal" data-target="#myModal">$40</div>
+			<div class="box questionButton" id="fifthQuestionButton" data-toggle="modal" data-target="#myModal">$50</div>
+		</div>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header"></div>
+					<div class="dropdown"></div>
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+							Choices<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li id="firstOption"></li>
+							<li id="secondOption"></li>
+							<li id="thirdOption"></li>
+							<li id="fourthOption"></li>
+						</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 <script
