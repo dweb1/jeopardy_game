@@ -10,7 +10,7 @@ $('.questionButton').on('click', function() {
 		$('.modal-header').html(secondQuestion.question);
 		$('#firstOption').html(secondQuestion.rightAnswer);
 		$('#secondOption').html(secondQuestion.wrongAnswers[0]);
-		$('#thirdOption').html(secondtQuestion.wrongAnswers[1]);
+		$('#thirdOption').html(secondQuestion.wrongAnswers[1]);
 		$('#fourthOption').html(secondQuestion.wrongAnswers[2]);
 	} else if (buttonClicked === "thirdQuestionButton") {
 		$('.modal-header').html(thirdQuestion.question);
@@ -41,7 +41,7 @@ var firstQuestion = {
 
 var secondQuestion = {
 	question: "Drawing on inspiration from his time in Spain during that country's civil war, Ernest Hemingway wrote this novel while on vacation in Cuba in the late 1930s.",
-	rightAnswer: "What is 'For Whom the Bell Tolls?",
+	rightAnswer: "What is 'For Whom the Bell Tolls'?",
 	wrongAnswers: ["What is 'The Sun Also Rises'?", "What is 'The Old Man and the Sea'?", "What is 'A Farewell to Arms'?"]
 }
 
