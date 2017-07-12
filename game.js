@@ -46,9 +46,9 @@ var secondQuestion = {
 }
 
 var thirdQuestion = {
-	question: "",
-	rightAnswer: "",
-	wrongAnswers: []
+	question: "In this book, the insect-like state in which the protagonist wakes up is said to be an allusion to the isolation and alienation the author experienced living in Prague.",
+	rightAnswer: "What is 'The Metamorphosis'?",
+	wrongAnswers: ["What is 'Charlotte's Web'?", "What is 'The Catcher in the Rye'?", "What is 'The Stranger'?"]
 }
 
 var fourthQuestion = {
@@ -58,7 +58,7 @@ var fourthQuestion = {
 }
 
 var fifthQuestion = {
-	question: "",
-	rightAnswer: "",
-	wrongAnswers: []
+	question: "Remaining unpublished for over 40 years due to concern over Soviet persecution, this author's masterpiece is one of the 20th Century's best examples of satire and stars the devil and a giant, talking cat name Behemot.",
+	rightAnswer: "Who is Mikhail Bulgakov?",
+	wrongAnswers: ["Who is Alexander Solzhenitsyn?", "Who is Vladimir Nabokov?", "Who is Nikolay Ostrovsky?"]
 }
