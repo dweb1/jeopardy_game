@@ -6,7 +6,7 @@
 
 #categoryTitle {
 	background-color: blue;
-	color: yellow;
+	color: gold;
 }
 
 .box {
@@ -14,7 +14,7 @@
 	color: yellow;
 	border-color: red;
 	border-style: solid;
-	width: 90px;
+	width: 100px;
 	height: 60px;
 	text-align: center;
 	font-weight: bold;
@@ -33,4 +33,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+h3 {
+	color: white;
+	font-size: 15px;
 }
