@@ -1,0 +1,22 @@
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 40px;
+}
+
+#categoryTitle {
+	background-color: blue;
+	color: yellow;
+}
+
+.box {
+	background-color: blue;
+	color: yellow;
+	border-color: red;
+	border-style: solid;
+	width: 90px;
+	height: 60px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+}
