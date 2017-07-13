@@ -94,10 +94,12 @@ function testAnswer() {
 			console.log("Correct");
 			currentScore += litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		} else {
 			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		};
 		});
 	$('#secondOption').on('click', function () {
@@ -107,10 +109,12 @@ function testAnswer() {
 			console.log("Correct");
 			currentScore += litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		} else {
 			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		};
 	});
 	$('#thirdOption').on('click', function () {
@@ -120,10 +124,12 @@ function testAnswer() {
 			console.log("Correct");
 			currentScore += litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		} else {
 			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		};
 	});
 	$('#fourthOption').on('click', function () {
@@ -133,10 +139,12 @@ function testAnswer() {
 			console.log("Correct");
 			currentScore += litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 		} else {
 			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
 			console.log(currentScore);
+			$('#scoreCounter').html(currentScore);
 	}
 	});
 };
