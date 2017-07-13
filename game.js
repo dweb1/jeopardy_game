@@ -2,34 +2,34 @@ $('.questionButton').on('click', function() {
 	var buttonClicked = event.target.id;
 	if (buttonClicked === "firstQuestionButton") {
 		$('.modal-header').html(litQuestions[0].question);
-		$('#firstOption').html(litQuestions[0].rightAnswer);
-		$('#secondOption').html(litQuestions[0].wrongAnswers[0]);
-		$('#thirdOption').html(litQuestions[0].wrongAnswers[1]);
-		$('#fourthOption').html(litQuestions[0].wrongAnswers[2]);
+		$('#firstOption').html(litQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[0].choosableAnswers[3]);
 	} else if (buttonClicked === "secondQuestionButton") {
 		$('.modal-header').html(litQuestions[1].question);
-		$('#firstOption').html(litQuestions[1].rightAnswer);
-		$('#secondOption').html(litQuestions[1].wrongAnswers[0]);
-		$('#thirdOption').html(litQuestions[1].wrongAnswers[1]);
-		$('#fourthOption').html(litQuestions[1].wrongAnswers[2]);
+		$('#firstOption').html(litQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[1].choosableAnswers[3]);
 	} else if (buttonClicked === "thirdQuestionButton") {
 		$('.modal-header').html(litQuestions[2].question);
-		$('#firstOption').html(litQuestions[2].rightAnswer);
-		$('#secondOption').html(litQuestions[2].wrongAnswers[0]);
-		$('#thirdOption').html(litQuestions[2].wrongAnswers[1]);
-		$('#fourthOption').html(litQuestions[2].wrongAnswers[2]);
+		$('#firstOption').html(litQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[2].choosableAnswers[3]);
 	} else if (buttonClicked === "fourthQuestionButton") {
 		$('.modal-header').html(litQuestions[3].question);
-		$('#firstOption').html(litQuestions[3].rightAnswer);
-		$('#secondOption').html(litQuestions[3].wrongAnswers[0]);
-		$('#thirdOption').html(litQuestions[3].wrongAnswers[1]);
-		$('#fourthOption').html(litQuestions[3].wrongAnswers[2]);
+		$('#firstOption').html(litQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[3].choosableAnswers[3]);
 	} else if (buttonClicked === "fifthQuestionButton") {
 		$('.modal-header').html(litQuestions[4].question);
-		$('#firstOption').html(litQuestions[4].rightAnswer);
-		$('#secondOption').html(litQuestions[4].wrongAnswers[0]);
-		$('#thirdOption').html(litQuestions[4].wrongAnswers[1]);
-		$('#fourthOption').html(litQuestions[4].wrongAnswers[2]);
+		$('#firstOption').html(litQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[4].choosableAnswers[3]);
 	}
 	})
 
@@ -55,7 +55,7 @@ var litQuestions =
 	value: 30,
 	question: "In this book, the insect-like state in which the protagonist wakes up is said to be an allusion to the isolation and alienation the author experienced living in Prague.",
 	rightAnswer: "What is 'The Metamorphosis'?",
-	choosableAnswers: ["What is 'Charlotte's Web'?", "What is 'The Catcher in the Rye'?", "What is 'The Stranger'?"]
+	choosableAnswers: ["What is 'Charlotte's Web'?", "What is 'The Catcher in the Rye'?", "What is 'The Stranger'?", "What is 'The Metamorphosis'?"]
 	},
 	{
 	questionNumber: 4,
