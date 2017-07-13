@@ -1,3 +1,5 @@
+var currentScore;
+
 $('.questionButton').on('click', function() {
 	var buttonClicked = event.target.id;
 	if (buttonClicked === "firstQuestionButton") {
@@ -72,3 +74,44 @@ var litQuestions =
 	choosableAnswers: ["Who is Alexander Solzhenitsyn?", "Who is Vladimir Nabokov?", "Who is Mikhail Bulgakov?", "Who is Nikolay Ostrovsky?"]
 	}
 	];
+
+$('#firstOption').on('click', function () {
+	var x = document.getElementById("firstOption");
+	var answerClicked = x.innerHTML;
+	if (answerClicked === litQuestions[0].rightAnswer) {
+		console.log("Correct");
+	} else {
+		console.log("Incorrect");
+	};
+	})
+
+$('#secondOption').on('click', function () {
+	var x = document.getElementById("secondOption");
+	var answerClicked = x.innerHTML;
+	if (answerClicked === litQuestions[0].rightAnswer) {
+		console.log("Correct");
+	} else {
+		console.log("Incorrect");
+	};
+})
+
+$('#thirdOption').on('click', function () {
+	var x = document.getElementById("thirdOption");
+	var answerClicked = x.innerHTML;
+	console.log(answerClicked);
+	if (answerClicked === litQuestions[0].rightAnswer) {
+		console.log("Correct");
+	} else {
+		console.log("Incorrect");
+	};
+})
+
+$('#fourthOption').on('click', function () {
+	var x = document.getElementById("fourthOption");
+	var answerClicked = x.innerHTML;
+	if (answerClicked === litQuestions[0].rightAnswer) {
+		console.log("Correct");
+	} else {
+		console.log("Incorrect");
+}
+})
