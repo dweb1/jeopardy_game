@@ -31,9 +31,11 @@ $('.questionButton').on('click', function() {
 		$('#thirdOption').html(litQuestions[4].wrongAnswers[1]);
 		$('#fourthOption').html(litQuestions[4].wrongAnswers[2]);
 	}
-	});
+	})
 
-var litQuestions = [
+
+var litQuestions =
+	[
 	{
 	questionNumber: 1,
 	value: 10,
@@ -69,10 +71,4 @@ var litQuestions = [
 	rightAnswer: "Who is Mikhail Bulgakov?",
 	wrongAnswers: ["Who is Alexander Solzhenitsyn?", "Who is Vladimir Nabokov?", "Who is Nikolay Ostrovsky?"]
 	}
-];
-
-// function randomselector() {
-// 	var arrayOfPossibleAnswers = [];
-// 	this
-// }
-
+	];
