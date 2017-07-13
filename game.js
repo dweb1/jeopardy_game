@@ -75,43 +75,50 @@ var litQuestions =
 	}
 	];
 
-$('#firstOption').on('click', function () {
-	var x = document.getElementById("firstOption");
-	var answerClicked = x.innerHTML;
-	if (answerClicked === litQuestions[0].rightAnswer) {
-		console.log("Correct");
-	} else {
-		console.log("Incorrect");
-	};
-	})
-
-$('#secondOption').on('click', function () {
-	var x = document.getElementById("secondOption");
-	var answerClicked = x.innerHTML;
-	if (answerClicked === litQuestions[0].rightAnswer) {
-		console.log("Correct");
-	} else {
-		console.log("Incorrect");
-	};
+var playerInput;
+$('.questionButton').on('click', function(event){
+	playerInput = event.target.id;
 })
 
-$('#thirdOption').on('click', function () {
-	var x = document.getElementById("thirdOption");
-	var answerClicked = x.innerHTML;
-	console.log(answerClicked);
-	if (answerClicked === litQuestions[0].rightAnswer) {
-		console.log("Correct");
-	} else {
-		console.log("Incorrect");
-	};
-})
+// function () {
 
-$('#fourthOption').on('click', function () {
-	var x = document.getElementById("fourthOption");
-	var answerClicked = x.innerHTML;
-	if (answerClicked === litQuestions[0].rightAnswer) {
-		console.log("Correct");
-	} else {
-		console.log("Incorrect");
-}
-})
+// 		$('#firstOption').on('click', function () {
+// 			var grabAnswerElement = document.getElementById("firstOption");
+// 			var answerClicked = grabAnswerElement.innerHTML;
+// 			if (answerClicked === litQuestions[0].rightAnswer) {
+// 				console.log("Correct");
+// 			} else {
+// 				console.log("Incorrect");
+// 			};
+// 			})
+
+// 		$('#secondOption').on('click', function () {
+// 			var grabAnswerElement = document.getElementById("secondOption");
+// 			var answerClicked = grabAnswerElement.innerHTML;
+// 			if (answerClicked === litQuestions[0].rightAnswer) {
+// 				console.log("Correct");
+// 			} else {
+// 				console.log("Incorrect");
+// 			};
+// 		})
+
+// 		$('#thirdOption').on('click', function () {
+// 			var grabAnswerElement = document.getElementById("thirdOption");
+// 			var answerClicked = grabAnswerElement.innerHTML;
+// 			if (answerClicked === litQuestions[0].rightAnswer) {
+// 				console.log("Correct");
+// 			} else {
+// 				console.log("Incorrect");
+// 			};
+// 		})
+
+// 		$('#fourthOption').on('click', function () {
+// 			var grabAnswerElement = document.getElementById("fourthOption");
+// 			var answerClicked = grabAnswerElement.innerHTML;
+// 			if (answerClicked === litQuestions[0].rightAnswer) {
+// 				console.log("Correct");
+// 			} else {
+// 				console.log("Incorrect");
+// 		}
+// 		})
+// }
