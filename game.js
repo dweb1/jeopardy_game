@@ -1,4 +1,4 @@
-var currentScore;
+var currentScore = 0;
 var indexOfLitQuestions;
 
 $('.questionButton').on('click', function() {
@@ -92,8 +92,12 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			console.log("Correct");
+			currentScore += litQuestions[i].value;
+			console.log(currentScore);
 		} else {
 			console.log("Incorrect");
+			currentScore -= litQuestions[i].value;
+			console.log(currentScore);
 		};
 		});
 	$('#secondOption').on('click', function () {
@@ -101,8 +105,12 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			console.log("Correct");
+			currentScore += litQuestions[i].value;
+			console.log(currentScore);
 		} else {
 			console.log("Incorrect");
+			currentScore -= litQuestions[i].value;
+			console.log(currentScore);
 		};
 	});
 	$('#thirdOption').on('click', function () {
@@ -110,8 +118,12 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			console.log("Correct");
+			currentScore += litQuestions[i].value;
+			console.log(currentScore);
 		} else {
 			console.log("Incorrect");
+			currentScore -= litQuestions[i].value;
+			console.log(currentScore);
 		};
 	});
 	$('#fourthOption').on('click', function () {
@@ -119,8 +131,12 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			console.log("Correct");
+			currentScore += litQuestions[i].value;
+			console.log(currentScore);
 		} else {
 			console.log("Incorrect");
+			currentScore -= litQuestions[i].value;
+			console.log(currentScore);
 	}
 	});
 };
