@@ -1,4 +1,5 @@
 var currentScore;
+var indexOfLitQuestions;
 
 $('.questionButton').on('click', function() {
 	var buttonClicked = event.target.id;
@@ -8,30 +9,35 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(litQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(litQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(litQuestions[0].choosableAnswers[3]);
+		i = 0;
 	} else if (buttonClicked === "secondQuestionButton") {
 		$('.modal-header').html(litQuestions[1].question);
 		$('#firstOption').html(litQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(litQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(litQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(litQuestions[1].choosableAnswers[3]);
+		i = 1;
 	} else if (buttonClicked === "thirdQuestionButton") {
 		$('.modal-header').html(litQuestions[2].question);
 		$('#firstOption').html(litQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(litQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(litQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(litQuestions[2].choosableAnswers[3]);
+		i = 2;
 	} else if (buttonClicked === "fourthQuestionButton") {
 		$('.modal-header').html(litQuestions[3].question);
 		$('#firstOption').html(litQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(litQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(litQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(litQuestions[3].choosableAnswers[3]);
+		i = 3;
 	} else if (buttonClicked === "fifthQuestionButton") {
 		$('.modal-header').html(litQuestions[4].question);
 		$('#firstOption').html(litQuestions[4].choosableAnswers[0]);
 		$('#secondOption').html(litQuestions[4].choosableAnswers[1]);
 		$('#thirdOption').html(litQuestions[4].choosableAnswers[2]);
 		$('#fourthOption').html(litQuestions[4].choosableAnswers[3]);
+		i = 4;
 	}
 	})
 
@@ -80,45 +86,43 @@ $('.questionButton').on('click', function(event){
 	playerInput = event.target.id;
 })
 
-// function () {
+function testAnswer() {
+	$('#firstOption').on('click', function () {
+		var grabAnswerElement = document.getElementById("firstOption");
+		var answerClicked = grabAnswerElement.innerHTML;
+		if (answerClicked === litQuestions[i].rightAnswer) {
+			console.log("Correct");
+		} else {
+			console.log("Incorrect");
+		};
+		});
+	$('#secondOption').on('click', function () {
+		var grabAnswerElement = document.getElementById("secondOption");
+		var answerClicked = grabAnswerElement.innerHTML;
+		if (answerClicked === litQuestions[i].rightAnswer) {
+			console.log("Correct");
+		} else {
+			console.log("Incorrect");
+		};
+	});
+	$('#thirdOption').on('click', function () {
+		var grabAnswerElement = document.getElementById("thirdOption");
+		var answerClicked = grabAnswerElement.innerHTML;
+		if (answerClicked === litQuestions[i].rightAnswer) {
+			console.log("Correct");
+		} else {
+			console.log("Incorrect");
+		};
+	});
+	$('#fourthOption').on('click', function () {
+		var grabAnswerElement = document.getElementById("fourthOption");
+		var answerClicked = grabAnswerElement.innerHTML;
+		if (answerClicked === litQuestions[i].rightAnswer) {
+			console.log("Correct");
+		} else {
+			console.log("Incorrect");
+	}
+	});
+};
 
-// 		$('#firstOption').on('click', function () {
-// 			var grabAnswerElement = document.getElementById("firstOption");
-// 			var answerClicked = grabAnswerElement.innerHTML;
-// 			if (answerClicked === litQuestions[0].rightAnswer) {
-// 				console.log("Correct");
-// 			} else {
-// 				console.log("Incorrect");
-// 			};
-// 			})
-
-// 		$('#secondOption').on('click', function () {
-// 			var grabAnswerElement = document.getElementById("secondOption");
-// 			var answerClicked = grabAnswerElement.innerHTML;
-// 			if (answerClicked === litQuestions[0].rightAnswer) {
-// 				console.log("Correct");
-// 			} else {
-// 				console.log("Incorrect");
-// 			};
-// 		})
-
-// 		$('#thirdOption').on('click', function () {
-// 			var grabAnswerElement = document.getElementById("thirdOption");
-// 			var answerClicked = grabAnswerElement.innerHTML;
-// 			if (answerClicked === litQuestions[0].rightAnswer) {
-// 				console.log("Correct");
-// 			} else {
-// 				console.log("Incorrect");
-// 			};
-// 		})
-
-// 		$('#fourthOption').on('click', function () {
-// 			var grabAnswerElement = document.getElementById("fourthOption");
-// 			var answerClicked = grabAnswerElement.innerHTML;
-// 			if (answerClicked === litQuestions[0].rightAnswer) {
-// 				console.log("Correct");
-// 			} else {
-// 				console.log("Incorrect");
-// 		}
-// 		})
-// }
+testAnswer();
