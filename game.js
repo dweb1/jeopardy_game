@@ -92,11 +92,13 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		};
 		});
 	$('#secondOption').on('click', function () {
@@ -105,11 +107,13 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		};
 	});
 	$('#thirdOption').on('click', function () {
@@ -118,11 +122,13 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		};
 	});
 	$('#fourthOption').on('click', function () {
@@ -131,11 +137,13 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).css('background-color', 'red');
+			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).html("");
 	}
 	});
 };
