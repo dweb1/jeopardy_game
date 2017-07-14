@@ -80,9 +80,9 @@ var litQuestions =
 	}
 	];
 
-var playerInput;
+var $playerInput;
 $('.questionButton').on('click', function(event){
-	playerInput = event.target.id;
+	$playerInput = event.target.id;
 })
 
 function testAnswer() {
@@ -92,9 +92,11 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		};
 		});
 	$('#secondOption').on('click', function () {
@@ -103,9 +105,11 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		};
 	});
 	$('#thirdOption').on('click', function () {
@@ -114,9 +118,11 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		};
 	});
 	$('#fourthOption').on('click', function () {
@@ -125,9 +131,11 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
+			$("#" + $playerInput).css('background-color', 'red');
 	}
 	});
 };
