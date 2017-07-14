@@ -180,28 +180,20 @@ function whatHappensAfterAnswer(){
 
 testAnswer();
 
-for (var i = 2; i < 7; i++){
+for (var i = 1; i < 7; i++){
 	$newColumn = $('<div>');
 	$newColumn.addClass('categoryColumn');
 	$newColumn.attr('id', "column" + i);
 	$('#gameboard').append($newColumn);
-	for (var j=0; j < 6; j++) {
-		$newBox = $('<div>');
-		$newBox.addClass('box');
-		// if (j = 0) {
-		// 	$newBox.html("");
-		// 	$("#column" + i).append($newBox);
-		// } else {
+	$newBox = $('<div>');
+	$newBox.addClass('box');
+	$("#column" + i).append($newBox);
+		for (var j=1; j < 6; j++) {
+			$newBox = $('<div>');
+			$newBox.addClass('box questionButton');
+			$newBox.attr("data-toggle", "modal").attr("data-target", "#myModal");
 			$newBox.html("$" + j*10);
+			$newBox.attr('id', 'questionBox' + i + j)
 			$("#column" + i).append($newBox);
-		// };
+			};
 	};
-}
-
-
-
-
-
-
-
-
