@@ -92,12 +92,12 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		};
 		});
@@ -107,12 +107,12 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		};
 	});
@@ -122,12 +122,12 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		};
 	});
@@ -137,12 +137,12 @@ function testAnswer() {
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', true);
 			$("#" + $playerInput).html("");
 		} else {
 			currentScore -= litQuestions[i].value;
 			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).removeClass('questionButton');
+			$("#" + $playerInput).prop('disabled', "true");
 			$("#" + $playerInput).html("");
 	}
 	});
