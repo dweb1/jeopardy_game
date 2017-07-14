@@ -1,5 +1,4 @@
 var currentScore = 0;
-var indexOfLitQuestions;
 
 $('.questionButton').on('click', function() {
 	var buttonClicked = event.target.id;
