@@ -91,14 +91,10 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("firstOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
-			console.log("Correct");
 			currentScore += litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		} else {
-			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		};
 		});
@@ -106,14 +102,10 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("secondOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
-			console.log("Correct");
 			currentScore += litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		} else {
-			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		};
 	});
@@ -121,14 +113,10 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("thirdOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
-			console.log("Correct");
 			currentScore += litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		} else {
-			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		};
 	});
@@ -136,14 +124,10 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("fourthOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
-			console.log("Correct");
 			currentScore += litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 		} else {
-			console.log("Incorrect");
 			currentScore -= litQuestions[i].value;
-			console.log(currentScore);
 			$('#scoreCounter').html(currentScore);
 	}
 	});
