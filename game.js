@@ -91,14 +91,10 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		};
 		});
 	$('#secondOption').on('click', function () {
@@ -106,14 +102,10 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		};
 	});
 	$('#thirdOption').on('click', function () {
@@ -121,14 +113,10 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		};
 	});
 	$('#fourthOption').on('click', function () {
@@ -136,16 +124,19 @@ function testAnswer() {
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', true);
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
-			$('#scoreCounter').html(currentScore);
-			$("#" + $playerInput).prop('disabled', "true");
-			$("#" + $playerInput).html("");
+			whatHappensAfterAnswer();
 	}
 	});
+};
+
+function whatHappensAfterAnswer(){
+	$('.modal').modal('hide');
+	$('#scoreCounter').html(currentScore);
+	$("#" + $playerInput).prop('disabled', true);
+	$("#" + $playerInput).html("");
 };
 
 testAnswer();
