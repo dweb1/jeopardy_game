@@ -12,7 +12,7 @@
 			<a href="https://fontmeme.com/jeopardy-font/"><img src="https://fontmeme.com/permalink/170712/e7a94346f260e7eea7b59202d3efa5f3.png" alt="jeopardy-font" border="0"></a>
 		</header>
 		<div id="gameboard">
-			<div id="categoryColumn">	
+			<div class="categoryColumn" id="column1">	
 				<div class="box">
 					<h3 id="category">LITERATURE</h3>
 				</div>
@@ -22,27 +22,27 @@
 				<div class="box questionButton" id="fourthQuestionButton" data-toggle="modal" data-target="#myModal">$40</div>
 				<div class="box questionButton" id="fifthQuestionButton" data-toggle="modal" data-target="#myModal">$50</div>
 			</div>
-			<div class="modal fade" id="myModal">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header"></div>
-						<div class="dropdown"></div>
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-								Choices<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li id="firstOption"></li>
-								<li id="secondOption"></li>
-								<li id="thirdOption"></li>
-								<li id="fourthOption"></li>
-							</ul>
-					</div>
-				</div>
-			</div>
 		</div>
 		<div id="scoreboard">
 			<p>Current Score:</p>
 			<p id="scoreCounter"> 00 </p>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header"></div>
+				<div class="dropdown"></div>
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+						Choices<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li id="firstOption"></li>
+						<li id="secondOption"></li>
+						<li id="thirdOption"></li>
+						<li id="fourthOption"></li>
+					</ul>
+			</div>
 		</div>
 	</div>
 <script
