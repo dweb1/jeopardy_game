@@ -260,42 +260,42 @@ var wildAnimals =
 	}
 	];
 
-var ???? =
+var webDevelopment =
 	[
 	{
-	category: "",
+	category: "Web Development",
 	value: 10,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "This is the HTML tag before which the JavaScript source file link should be placed.",
+	rightAnswer: "What is the closing body tag?",
+	choosableAnswers: ["What is the closing body tag?", "What is the closing head tag?", "What is the title tag?", "What is the opening body tag?"]
 	},
 	{
-	category: "",
+	category: "Web Development",
 	value: 20,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "This is the method you would use for grabbing the last element in an array where you do not know the array length.",
+	rightAnswer: "What is array.length - 1?",
+	choosableAnswers: ["What is array.slice()?", "What is array.indexOf()?", "What is array.length -1?", "What is array.splice()?"]
 	},
 	{
-	category: "The Arts",
+	category: "Web Development",
 	value: 30,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "Despite its many flaws, this interpreted language is the language on which the web runs.",
+	rightAnswer: "What is JavaScript?",
+	choosableAnswers: ["What is Java?", "What is JavaScript?", "What is C++?", "What is Ruby?"]
 	},
 	{
-	category: "",
+	category: "Web Development",
 	value: 40,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "Often referred to by the nickname Uncle Bob, this man helped create the Agile Manifesto which describes principles of software development.",
+	rightAnswer: "Who is Robert Martin?",
+	choosableAnswers: ["Who is Kent Beck?", "Who is Robert Carr?", "Who is Linus Torvalds?", "Who is Robert Martin?"]
 	},
 	{
-	category: "",
+	category: "Web Development",
 	value: 50,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "This term refers to the feature of Javascript to reference a variable defined after a function and should be avoided as it can cause bugs.",
+	rightAnswer: "What is hoisting?",
+	choosableAnswers: ["What is hoisting?", "What is concatenation?", "What is a ternary operator?", "What is an event handler?"]
 	}
 	];
 
