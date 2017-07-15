@@ -221,42 +221,42 @@ var theArtsQuestions =
 	}
 	];
 
-var ??? =
+var wildAnimals =
 	[
 	{
-	category: "",
+	category: "Wild Animals",
 	value: 10,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "These animals, prevalent throughout all of North America, are a known nuisance for gardeners and are named for the distinctive look of their hindparts.",
+	rightAnswer: "What is the White-tailed deer?",
+	choosableAnswers: ["What is the Eastern raccoon?", "What is the gopher", "What is the Cottontail rabbit?", "What is the White-tailed deer?"]
 	},
 	{
-	category: "",
+	category: "Wild Animals",
 	value: 20,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "Popular in Native American folklore, this animal is often portrayed as a trickster and often can take the form of a man.",
+	rightAnswer: "What is a coyote?",
+	choosableAnswers: ["What is a crocodile?", "What is a coyote?", "What is a wolf?", "What is a mountain lion?"]
 	},
 	{
-	category: "The Arts",
+	category: "Wild Animals",
 	value: 30,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "Rather than chasing its prey, this wild cat instead will stalk and, when it is merely a few feet away, opt instead to pounce and smother.",
+	rightAnswer: "What is a serval?",
+	choosableAnswers: ["What is a bobcat?", "What is a mountain lion?", "What is a serval?", "What is a cheetah?"]
 	},
 	{
-	category: "",
+	category: "Wild Animals",
 	value: 40,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "Considered the most deadly threat to humans in the entire world, this animal causes over 1 million deaths every single year.",
+	rightAnswer: "What is the mosquito?",
+	choosableAnswers: ["What is the mosquito?", "What is the wolf?", "What is the lion?", "What is the rattlesnake?"]
 	},
 	{
-	category: "",
+	category: "Wild Animals",
 	value: 50,
-	question: "",
-	rightAnswer: "",
-	choosableAnswers: ["", "", "", ""]
+	question: "A community of this animal, the world's fastest bird, famously has developed nests among the highest floors of New York's skyscrapers and feed off of that city's pigeon and rat population.",
+	rightAnswer: "What is the Peregrine falcon?",
+	choosableAnswers: ["What is the Bald eagle?", "What is the Red-tailed hawk?", "What is the Golden eagle?", "What is the Peregrine falcon?"]
 	}
 	];
 
