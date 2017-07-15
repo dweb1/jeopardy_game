@@ -69,6 +69,7 @@ var litQuestions =
 	choosableAnswers: ["Who is A.A. Milne?", "Who is Roald Dahl?", "Who is Dr. Seuss?", "Who is Hans Christian Andersen?"]
 	},
 	{
+	category: "Literature",
 	questionNumber: 2,
 	value: 20,
 	question: "Drawing on inspiration from his time in Spain during that country's civil war, Ernest Hemingway wrote this novel while on vacation in Cuba in the late 1930s.",
@@ -76,6 +77,7 @@ var litQuestions =
 	choosableAnswers: ["What is 'For Whom the Bell Tolls'?", "What is 'The Sun Also Rises'?", "What is 'The Old Man and the Sea'?", "What is 'A Farewell to Arms'?"]
 	},
 	{
+	category: "Literature",
 	questionNumber: 3,
 	value: 30,
 	question: "In this book, the insect-like state in which the protagonist wakes up is said to be an allusion to the isolation and alienation the author experienced living in Prague.",
@@ -83,6 +85,7 @@ var litQuestions =
 	choosableAnswers: ["What is 'Charlotte's Web'?", "What is 'The Catcher in the Rye'?", "What is 'The Stranger'?", "What is 'The Metamorphosis'?"]
 	},
 	{
+	category: "Literature",
 	questionNumber: 4,
 	value: 40,
 	question: "Before her untimely death from lupus at the age of 39, this author's work focused on the literary trope of the grotesque in the American South.",
@@ -90,6 +93,7 @@ var litQuestions =
 	choosableAnswers: ["Who is Sylvia Plath?", "Who is Flannery O'Connor?", "Who is Zora Neale Hurston?", "Who is Louisa May Alcott?"]
 	},
 	{
+	category: "Literature",
 	questionNumber: 5,
 	value: 50,
 	question: "Remaining unpublished for over 40 years due to concern over Soviet persecution, this author's masterpiece is one of the 20th Century's best examples of satire and stars the devil and a giant, talking cat name Behemot.",
@@ -98,7 +102,7 @@ var litQuestions =
 	}
 	];
 
-var worldCapitals =
+var worldCapitalQuestions =
 	[
 	{
 	category: "World Capitals",
@@ -134,6 +138,164 @@ var worldCapitals =
 	question: "Located at over -41 degrees Latitude, this former British colonial city was appointed captial in 1865.",
 	rightAnswer: "What is Wellington?",
 	choosableAnswers: ["What is Montevideo?", "What is Cape Town?", "What is Wellington?", "What is Canberra?"]
+	}
+	];
+
+var movieQuestions =
+	[
+	{
+	category: "Movies",
+	value: 10,
+	question: "Not of much use to man made of metal, this is what the Tin Man wish for in the 'Wizard of Oz'.",
+	rightAnswer: "What is a heart?",
+	choosableAnswers: ["What is a brain?", "What is a heart?", "What is courage?", "What is food?"]
+	},
+	{
+	category: "Movies",
+	value: 20,
+	question: "Drawing on inspiration from the Brothers Grimm, this was Disney's first feature length film to utilize cel animation and took over 5 years to animate.",
+	rightAnswer: "What is Snow White and the Seven Dwarfs.",
+	choosableAnswers: ["What is 'Snow White and the Seven Dwarfs'?", "What is 'Bambi'?", "What is 'Cinderella'?", "What is 'Fantasia'?"]
+	},
+	{
+	category: "Movies",
+	value: 30,
+	question: "Starring in only his second role on the silver screen, Jim Brown featured alongside Lee Marvin and Charles Bronson as members of a rag-tag band of convicts on a top secret Army mission.",
+	rightAnswer: "What is 'The Dirty Dozen'?",
+	choosableAnswers: ["What is 'Slaughter'?", "What is 'Three the Hard Way'?", "What is 'Mars Attacks'?", "What is 'The Dirty Dozen'?"]
+	},
+	{
+	category: "Movies",
+	value: 40,
+	question: "This actor had a close working relationship with director Alfred Hitchcock with whom he worked on four different feature films - famously and finally in the film 'Vertigo'.",
+	rightAnswer: "Who is James Stewart?",
+	choosableAnswers: ["Who is John Longden?", "Who is James Stewart?", "Who is Cary Grant?", "Who is Anthony Perkins?"]
+	},
+	{
+	category: "Movies",
+	value: 50,
+	question: "Although the novel from which it draws inspiration is set in Belgian Congo, Stanley Kubrik's Apocalypse Now takes place in what former French colony?",
+	rightAnswer: "What is Vietnam?",
+	choosableAnswers: ["What is Mauritania?", "What is Senegal?", "What is Vietnam", "What is New Caledonia?"]
+	}
+	];
+
+var theArtsQuestions =
+	[
+	{
+	category: "The Arts",
+	value: 10,
+	question: "Premiering in 1877, this renowned ballet seen here is based loosely on Russian folk tales.",
+	imageSouce: "swan_lake.jpg",
+	rightAnswer: "What is 'Swan Lake'?",
+	choosableAnswers: ["What is /Giselle'?", "What is 'Sleeping Beauty'?", "What is 'Swan Lake'?", "What is the 'Nutcracker'?"]
+	},
+	{
+	category: "The Arts",
+	value: 20,
+	question: "Despite the name of this instrument's type of string being referred to as 'catgut', they are actually made of sheep's intestines.",
+	rightAnswer: "What is a violin?",
+	choosableAnswers: ["What is a mandolin?", "What is a piano?", "What is a cello?", "What is a violin?"]
+	},
+	{
+	category: "The Arts",
+	value: 30,
+	question: "This Spanish Surrealist painter, whose work is seen here, was known for his vivid use of color",
+	imageSouce: "miro.jpg",
+	rightAnswer: "Who is Miro?",
+	choosableAnswers: ["Who is Picasso?", "Who is Miro?", "Who is Dali?", "Who is Dominguez?"]
+	},
+	{
+	category: "The Arts",
+	value: 40,
+	question: "Michelangelo is reputed to have chiseled his famous David out of a single block of this type of marble.",
+	rightAnswer: "What is Carrara marble?",
+	choosableAnswers: ["What is Parian marble?", "What is Pentelic marble?", "What is Carrara marble?", "What is Alabaster marble?"]
+	},
+	{
+	category: "The Arts",
+	value: 50,
+	question: "This classical muscial composition comes from the latin for 'harmony' or an 'agreement of sounds'.",
+	rightAnswer: "What is a symphony?",
+	choosableAnswers: ["What is a symphony?", "What is an orchestration?", "What is a fugue?", "What is a concerto?"]
+	}
+	];
+
+var ??? =
+	[
+	{
+	category: "",
+	value: 10,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 20,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "The Arts",
+	value: 30,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 40,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 50,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	}
+	];
+
+var ???? =
+	[
+	{
+	category: "",
+	value: 10,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 20,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "The Arts",
+	value: 30,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 40,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
+	},
+	{
+	category: "",
+	value: 50,
+	question: "",
+	rightAnswer: "",
+	choosableAnswers: ["", "", "", ""]
 	}
 	];
 
