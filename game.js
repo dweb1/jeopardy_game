@@ -105,7 +105,7 @@ var movieQuestions =
 	{
 	category: "Movies",
 	value: 10,
-	question: "Not of much use to man made of metal, this is what the Tin Man wish for in the 'Wizard of Oz'.",
+	question: "Not of much use to a man made of metal, this is what the Tin Man wish for in the 'Wizard of Oz'.",
 	rightAnswer: "What is a heart?",
 	choosableAnswers: ["What is a brain?", "What is a heart?", "What is courage?", "What is food?"]
 	},
@@ -147,7 +147,7 @@ var theArtsQuestions =
 	question: "Premiering in 1877, this renowned ballet seen here is based loosely on Russian folk tales.",
 	imageSouce: "swan_lake.jpg",
 	rightAnswer: "What is 'Swan Lake'?",
-	choosableAnswers: ["What is /Giselle'?", "What is 'Sleeping Beauty'?", "What is 'Swan Lake'?", "What is the 'Nutcracker'?"]
+	choosableAnswers: ["What is 'Giselle'?", "What is 'Sleeping Beauty'?", "What is 'Swan Lake'?", "What is the 'Nutcracker'?"]
 	},
 	{
 	category: "The Arts",
@@ -159,7 +159,7 @@ var theArtsQuestions =
 	{
 	category: "The Arts",
 	value: 30,
-	question: "This Spanish Surrealist painter, whose work is seen here, was known for his vivid use of color",
+	question: "This Spanish Surrealist painter, whose work is seen here, was known for his vivid use of color.",
 	imageSouce: "miro.jpg",
 	rightAnswer: "Who is Miro?",
 	choosableAnswers: ["Who is Picasso?", "Who is Miro?", "Who is Dali?", "Who is Dominguez?"]
@@ -385,6 +385,7 @@ $('.questionButton').on('click', function() {
 		i = 4;
 	} else if (buttonClicked === "questionBox41") {
 		$('.modal-header').html(theArtsQuestions[0].question);
+		$( ".modal-header" ).prepend("<img src='swan_lake.jpg' width='550px'><br>");
 		$('#firstOption').html(theArtsQuestions[0].choosableAnswers[0]);
 		$('#secondOption').html(theArtsQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[0].choosableAnswers[2]);
@@ -399,6 +400,7 @@ $('.questionButton').on('click', function() {
 		i = 4;
 	} else if (buttonClicked === "questionBox43") {
 		$('.modal-header').html(theArtsQuestions[2].question);
+		$( ".modal-header" ).prepend("<img src='miro.jpg' width='550px'><br>");
 		$('#firstOption').html(theArtsQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(theArtsQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[2].choosableAnswers[2]);
@@ -419,39 +421,39 @@ $('.questionButton').on('click', function() {
 		$('#fourthOption').html(theArtsQuestions[4].choosableAnswers[3]);
 		i = 4;
 	} else if (buttonClicked === "questionBox51") {
-		$('.modal-header').html(wildAnimalQuestions[4].question);
-		$('#firstOption').html(wildAnimalQuestions[4].choosableAnswers[0]);
-		$('#secondOption').html(wildAnimalQuestions[4].choosableAnswers[1]);
-		$('#thirdOption').html(wildAnimalQuestions[4].choosableAnswers[2]);
-		$('#fourthOption').html(wildAnimalQuestions[4].choosableAnswers[3]);
-		i = 4;
-	} else if (buttonClicked === "questionBox52") {
 		$('.modal-header').html(wildAnimalQuestions[0].question);
 		$('#firstOption').html(wildAnimalQuestions[0].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[0].choosableAnswers[3]);
 		i = 4;
-	} else if (buttonClicked === "questionBox53") {
+	} else if (buttonClicked === "questionBox52") {
 		$('.modal-header').html(wildAnimalQuestions[1].question);
 		$('#firstOption').html(wildAnimalQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[1].choosableAnswers[3]);
 		i = 4;
-	} else if (buttonClicked === "questionBox54") {
+	} else if (buttonClicked === "questionBox53") {
 		$('.modal-header').html(wildAnimalQuestions[2].question);
 		$('#firstOption').html(wildAnimalQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[2].choosableAnswers[3]);
 		i = 4;
-	} else if (buttonClicked === "questionBox55") {
+	} else if (buttonClicked === "questionBox54") {
 		$('.modal-header').html(wildAnimalQuestions[3].question);
 		$('#firstOption').html(wildAnimalQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox55") {
+		$('.modal-header').html(wildAnimalQuestions[4].question);
+		$('#firstOption').html(wildAnimalQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[4].choosableAnswers[3]);
 		i = 4;
 	} else if (buttonClicked === "questionBox61") {
 		$('.modal-header').html(wildAnimalQuestions[0].question);
@@ -494,50 +496,59 @@ $('.questionButton').on('click', function() {
 var $playerInput;
 $('.questionButton').on('click', function(event){
 	$playerInput = event.target.id;
+	console.log($playerInput);
 })
 
 function testAnswer() {
 	$('#firstOption').on('click', function () {
 		var grabAnswerElement = document.getElementById("firstOption");
 		var answerClicked = grabAnswerElement.innerHTML;
-		if (answerClicked === litQuestions[i].rightAnswer) {
+		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
+			console.log("Right");
 			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
+			console.log("Wrong");
 			whatHappensAfterAnswer();
 		};
 		});
 	$('#secondOption').on('click', function () {
 		var grabAnswerElement = document.getElementById("secondOption");
 		var answerClicked = grabAnswerElement.innerHTML;
-		if (answerClicked === litQuestions[i].rightAnswer) {
+		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
+			console.log("Right");
 			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
+			console.log("Wrong");
 			whatHappensAfterAnswer();
 		};
 	});
 	$('#thirdOption').on('click', function () {
 		var grabAnswerElement = document.getElementById("thirdOption");
 		var answerClicked = grabAnswerElement.innerHTML;
-		if (answerClicked === litQuestions[i].rightAnswer) {
+		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
+			console.log("Right");
 			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
+			console.log("Wrong");
 			whatHappensAfterAnswer();
 		};
 	});
 	$('#fourthOption').on('click', function () {
 		var grabAnswerElement = document.getElementById("fourthOption");
 		var answerClicked = grabAnswerElement.innerHTML;
-		if (answerClicked === litQuestions[i].rightAnswer) {
+		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
 			currentScore += litQuestions[i].value;
+			console.log("Right");
 			whatHappensAfterAnswer();
 		} else {
 			currentScore -= litQuestions[i].value;
+			console.log("Wrong");
 			whatHappensAfterAnswer();
 	}
 	});
