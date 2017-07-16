@@ -135,7 +135,7 @@ var movieQuestions =
 	value: 50,
 	question: "Although the novel from which it draws inspiration is set in Belgian Congo, Stanley Kubrik's Apocalypse Now takes place in what former French colony?",
 	rightAnswer: "What is Vietnam?",
-	choosableAnswers: ["What is Mauritania?", "What is Senegal?", "What is Vietnam", "What is New Caledonia?"]
+	choosableAnswers: ["What is Mauritania?", "What is Senegal?", "What is Vietnam?", "What is New Caledonia?"]
 	}
 	];
 
@@ -319,28 +319,28 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(worldCapitalQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(worldCapitalQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(worldCapitalQuestions[0].choosableAnswers[3]);
-		i = 4;
+		i = 0;
 	} else if (buttonClicked === "questionBox22") {
 		$('.modal-header').html(worldCapitalQuestions[1].question);
 		$('#firstOption').html(worldCapitalQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(worldCapitalQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(worldCapitalQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(worldCapitalQuestions[1].choosableAnswers[3]);
-		i = 4;
+		i = 1;
 	} else if (buttonClicked === "questionBox23") {
 		$('.modal-header').html(worldCapitalQuestions[2].question);
 		$('#firstOption').html(worldCapitalQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(worldCapitalQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(worldCapitalQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(worldCapitalQuestions[2].choosableAnswers[3]);
-		i = 4;
+		i = 2;
 	} else if (buttonClicked === "questionBox24") {
 		$('.modal-header').html(worldCapitalQuestions[3].question);
 		$('#firstOption').html(worldCapitalQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(worldCapitalQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(worldCapitalQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(worldCapitalQuestions[3].choosableAnswers[3]);
-		i = 4;
+		i = 3;
 	} else if (buttonClicked === "questionBox25") {
 		$('.modal-header').html(worldCapitalQuestions[4].question);
 		$('#firstOption').html(worldCapitalQuestions[4].choosableAnswers[0]);
@@ -354,28 +354,28 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(movieQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(movieQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(movieQuestions[0].choosableAnswers[3]);
-		i = 4;
+		i = 0;
 	} else if (buttonClicked === "questionBox32") {
 		$('.modal-header').html(movieQuestions[1].question);
 		$('#firstOption').html(movieQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(movieQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(movieQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(movieQuestions[1].choosableAnswers[3]);
-		i = 4;
+		i = 1;
 	} else if (buttonClicked === "questionBox33") {
 		$('.modal-header').html(movieQuestions[2].question);
 		$('#firstOption').html(movieQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(movieQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(movieQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(movieQuestions[2].choosableAnswers[3]);
-		i = 4;
+		i = 2;
 	} else if (buttonClicked === "questionBox34") {
 		$('.modal-header').html(movieQuestions[3].question);
 		$('#firstOption').html(movieQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(movieQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(movieQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(movieQuestions[3].choosableAnswers[3]);
-		i = 4;
+		i = 3;
 	} else if (buttonClicked === "questionBox35") {
 		$('.modal-header').html(movieQuestions[4].question);
 		$('#firstOption').html(movieQuestions[4].choosableAnswers[0]);
@@ -390,14 +390,14 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(theArtsQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(theArtsQuestions[0].choosableAnswers[3]);
-		i = 4;
+		i = 0;
 	} else if (buttonClicked === "questionBox42") {
 		$('.modal-header').html(theArtsQuestions[1].question);
 		$('#firstOption').html(theArtsQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(theArtsQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(theArtsQuestions[1].choosableAnswers[3]);
-		i = 4;
+		i = 1;
 	} else if (buttonClicked === "questionBox43") {
 		$('.modal-header').html(theArtsQuestions[2].question);
 		$( ".modal-header" ).prepend("<img src='miro.jpg' width='550px'><br>");
@@ -405,14 +405,14 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(theArtsQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(theArtsQuestions[2].choosableAnswers[3]);
-		i = 4;
+		i = 2;
 	} else if (buttonClicked === "questionBox44") {
 		$('.modal-header').html(theArtsQuestions[3].question);
 		$('#firstOption').html(theArtsQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(theArtsQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(theArtsQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(theArtsQuestions[3].choosableAnswers[3]);
-		i = 4;
+		i = 3;
 	} else if (buttonClicked === "questionBox45") {
 		$('.modal-header').html(theArtsQuestions[4].question);
 		$('#firstOption').html(theArtsQuestions[4].choosableAnswers[0]);
@@ -426,28 +426,28 @@ $('.questionButton').on('click', function() {
 		$('#secondOption').html(wildAnimalQuestions[0].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[0].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[0].choosableAnswers[3]);
-		i = 4;
+		i = 0;
 	} else if (buttonClicked === "questionBox52") {
 		$('.modal-header').html(wildAnimalQuestions[1].question);
 		$('#firstOption').html(wildAnimalQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[1].choosableAnswers[3]);
-		i = 4;
+		i = 1;
 	} else if (buttonClicked === "questionBox53") {
 		$('.modal-header').html(wildAnimalQuestions[2].question);
 		$('#firstOption').html(wildAnimalQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[2].choosableAnswers[3]);
-		i = 4;
+		i = 2;
 	} else if (buttonClicked === "questionBox54") {
 		$('.modal-header').html(wildAnimalQuestions[3].question);
 		$('#firstOption').html(wildAnimalQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(wildAnimalQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(wildAnimalQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(wildAnimalQuestions[3].choosableAnswers[3]);
-		i = 4;
+		i = 3;
 	} else if (buttonClicked === "questionBox55") {
 		$('.modal-header').html(wildAnimalQuestions[4].question);
 		$('#firstOption').html(wildAnimalQuestions[4].choosableAnswers[0]);
@@ -456,33 +456,33 @@ $('.questionButton').on('click', function() {
 		$('#fourthOption').html(wildAnimalQuestions[4].choosableAnswers[3]);
 		i = 4;
 	} else if (buttonClicked === "questionBox61") {
-		$('.modal-header').html(wildAnimalQuestions[0].question);
-		$('#firstOption').html(wildAnimalQuestions[0].choosableAnswers[0]);
-		$('#secondOption').html(wildAnimalQuestions[0].choosableAnswers[1]);
-		$('#thirdOption').html(wildAnimalQuestions[0].choosableAnswers[2]);
-		$('#fourthOption').html(wildAnimalQuestions[0].choosableAnswers[3]);
-		i = 4;
+		$('.modal-header').html(webDevelopmentQuestions[0].question);
+		$('#firstOption').html(webDevelopmentQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(webDevelopmentQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(webDevelopmentQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(webDevelopmentQuestions[0].choosableAnswers[3]);
+		i = 0;
 	} else if (buttonClicked === "questionBox62") {
 		$('.modal-header').html(webDevelopmentQuestions[1].question);
 		$('#firstOption').html(webDevelopmentQuestions[1].choosableAnswers[0]);
 		$('#secondOption').html(webDevelopmentQuestions[1].choosableAnswers[1]);
 		$('#thirdOption').html(webDevelopmentQuestions[1].choosableAnswers[2]);
 		$('#fourthOption').html(webDevelopmentQuestions[1].choosableAnswers[3]);
-		i = 4;
+		i = 1;
 	} else if (buttonClicked === "questionBox63") {
 		$('.modal-header').html(webDevelopmentQuestions[2].question);
 		$('#firstOption').html(webDevelopmentQuestions[2].choosableAnswers[0]);
 		$('#secondOption').html(webDevelopmentQuestions[2].choosableAnswers[1]);
 		$('#thirdOption').html(webDevelopmentQuestions[2].choosableAnswers[2]);
 		$('#fourthOption').html(webDevelopmentQuestions[2].choosableAnswers[3]);
-		i = 4;
+		i = 2;
 	} else if (buttonClicked === "questionBox64") {
 		$('.modal-header').html(webDevelopmentQuestions[3].question);
 		$('#firstOption').html(webDevelopmentQuestions[3].choosableAnswers[0]);
 		$('#secondOption').html(webDevelopmentQuestions[3].choosableAnswers[1]);
 		$('#thirdOption').html(webDevelopmentQuestions[3].choosableAnswers[2]);
 		$('#fourthOption').html(webDevelopmentQuestions[3].choosableAnswers[3]);
-		i = 4;
+		i = 3;
 	} else if (buttonClicked === "questionBox65") {
 		$('.modal-header').html(webDevelopmentQuestions[4].question);
 		$('#firstOption').html(webDevelopmentQuestions[4].choosableAnswers[0]);
@@ -496,7 +496,6 @@ $('.questionButton').on('click', function() {
 var $playerInput;
 $('.questionButton').on('click', function(event){
 	$playerInput = event.target.id;
-	console.log($playerInput);
 })
 
 function testAnswer() {
@@ -504,25 +503,61 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("firstOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			currentScore += litQuestions[i].value;
-			console.log("Right");
+			if ($playerInput.slice(-1) === 1){
+					currentScore += 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore += 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore += 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore += 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore += 50;
+				};	
 			whatHappensAfterAnswer();
 		} else {
-			currentScore -= litQuestions[i].value;
-			console.log("Wrong");
+			if ($playerInput.slice(-1) === 1){
+					currentScore -= 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore -= 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore -= 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore -= 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore -= 50;
+				};
 			whatHappensAfterAnswer();
 		};
-		});
+	});
 	$('#secondOption').on('click', function () {
 		var grabAnswerElement = document.getElementById("secondOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			currentScore += litQuestions[i].value;
-			console.log("Right");
+			if ($playerInput.slice(-1) === 1){
+					currentScore += 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore += 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore += 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore += 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore += 50;
+				};	
 			whatHappensAfterAnswer();
 		} else {
-			currentScore -= litQuestions[i].value;
-			console.log("Wrong");
+			if ($playerInput.slice(-1) === 1){
+					currentScore -= 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore -= 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore -= 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore -= 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore -= 50;
+				};
 			whatHappensAfterAnswer();
 		};
 	});
@@ -530,12 +565,30 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("thirdOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			currentScore += litQuestions[i].value;
-			console.log("Right");
+			if ($playerInput.slice(-1) === 1){
+					currentScore += 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore += 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore += 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore += 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore += 50;
+				};	
 			whatHappensAfterAnswer();
 		} else {
-			currentScore -= litQuestions[i].value;
-			console.log("Wrong");
+			if ($playerInput.slice(-1) === 1){
+					currentScore -= 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore -= 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore -= 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore -= 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore -= 50;
+				};	
 			whatHappensAfterAnswer();
 		};
 	});
@@ -543,15 +596,34 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("fourthOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			currentScore += litQuestions[i].value;
-			console.log("Right");
+			if ($playerInput.slice(-1) === 1){
+					currentScore += 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore += 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore += 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore += 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore += 50;
+				};	
 			whatHappensAfterAnswer();
 		} else {
-			currentScore -= litQuestions[i].value;
-			console.log("Wrong");
+			if ($playerInput.slice(-1) === 1){
+					currentScore -= 10;
+				} else if ($playerInput.slice(-1) === "2") {
+					currentScore -= 20;
+				} else if ($playerInput.slice(-1) === "3") {
+					currentScore -= 30;
+				} else if ($playerInput.slice(-1) === "4") {
+					currentScore -= 40;
+				} else if ($playerInput.slice(-1) === "5") {
+					currentScore -= 50;
+				};			
 			whatHappensAfterAnswer();
-	}
-	});
+			};
+		}
+	);
 };
 
 function whatHappensAfterAnswer(){
