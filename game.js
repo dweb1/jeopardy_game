@@ -18,47 +18,6 @@ for (var i = 1; i < 7; i++){
 			};
 	};
 
-$('.questionButton').on('click', function() {
-	var buttonClicked = event.target.id;
-	if (buttonClicked === "questionBox11") {
-		$('.modal-header').html(litQuestions[0].question);
-		$('#firstOption').html(litQuestions[0].choosableAnswers[0]);
-		$('#secondOption').html(litQuestions[0].choosableAnswers[1]);
-		$('#thirdOption').html(litQuestions[0].choosableAnswers[2]);
-		$('#fourthOption').html(litQuestions[0].choosableAnswers[3]);
-		i = 0;
-	} else if (buttonClicked === "questionBox12") {
-		$('.modal-header').html(litQuestions[1].question);
-		$('#firstOption').html(litQuestions[1].choosableAnswers[0]);
-		$('#secondOption').html(litQuestions[1].choosableAnswers[1]);
-		$('#thirdOption').html(litQuestions[1].choosableAnswers[2]);
-		$('#fourthOption').html(litQuestions[1].choosableAnswers[3]);
-		i = 1;
-	} else if (buttonClicked === "questionBox13") {
-		$('.modal-header').html(litQuestions[2].question);
-		$('#firstOption').html(litQuestions[2].choosableAnswers[0]);
-		$('#secondOption').html(litQuestions[2].choosableAnswers[1]);
-		$('#thirdOption').html(litQuestions[2].choosableAnswers[2]);
-		$('#fourthOption').html(litQuestions[2].choosableAnswers[3]);
-		i = 2;
-	} else if (buttonClicked === "questionBox14") {
-		$('.modal-header').html(litQuestions[3].question);
-		$('#firstOption').html(litQuestions[3].choosableAnswers[0]);
-		$('#secondOption').html(litQuestions[3].choosableAnswers[1]);
-		$('#thirdOption').html(litQuestions[3].choosableAnswers[2]);
-		$('#fourthOption').html(litQuestions[3].choosableAnswers[3]);
-		i = 3;
-	} else if (buttonClicked === "questionBox15") {
-		$('.modal-header').html(litQuestions[4].question);
-		$('#firstOption').html(litQuestions[4].choosableAnswers[0]);
-		$('#secondOption').html(litQuestions[4].choosableAnswers[1]);
-		$('#thirdOption').html(litQuestions[4].choosableAnswers[2]);
-		$('#fourthOption').html(litQuestions[4].choosableAnswers[3]);
-		i = 4;
-	}
-	})
-
-
 var litQuestions =
 	[
 	{
@@ -128,7 +87,7 @@ var worldCapitalQuestions =
 	{
 	category: "World Capitals",
 	value: 40,
-	question: "Serving as capital of different nations and republics consecutively since 1841, this city sits at the confluence of the Rivers Danube and Sava.",
+	question: "Serving as capital of different nations and republics consistently since 1841, this city sits at the confluence of the Rivers Danube and Sava.",
 	rightAnswer: "What is Belgrade?",
 	choosableAnswers: ["What is Vienna?", "What is Belgrade?", "What is Budapest?", "What is Bratislava?"]
 	},
@@ -221,7 +180,7 @@ var theArtsQuestions =
 	}
 	];
 
-var wildAnimals =
+var wildAnimalQuestions =
 	[
 	{
 	category: "Wild Animals",
@@ -260,7 +219,7 @@ var wildAnimals =
 	}
 	];
 
-var webDevelopment =
+var webDevelopmentQuestions =
 	[
 	{
 	category: "Web Development",
@@ -298,6 +257,239 @@ var webDevelopment =
 	choosableAnswers: ["What is hoisting?", "What is concatenation?", "What is a ternary operator?", "What is an event handler?"]
 	}
 	];
+
+var arrayOfCategories = [litQuestions[0].category, worldCapitalQuestions[0].category, movieQuestions[0].category, theArtsQuestions[0].category, wildAnimalQuestions[0].category, webDevelopmentQuestions[0].category];
+
+for (var i = 0; i < 6; i++) {
+	if (i === 0) {
+		$('#column1 :first-child').html(arrayOfCategories[i]);
+	} else if (i === 1) {
+		$('#column2 :first-child').html(arrayOfCategories[i]);
+	} else if (i === 2) {
+		$('#column3 :first-child').html(arrayOfCategories[i]);
+	} else if (i === 3) {
+		$('#column4 :first-child').html(arrayOfCategories[i]);
+	} else if (i === 4) {
+		$('#column5 :first-child').html(arrayOfCategories[i]);
+	} else if (i === 5) {
+		$('#column6 :first-child').html(arrayOfCategories[i]);
+	}
+};
+
+$('.questionButton').on('click', function() {
+	var buttonClicked = event.target.id;
+	if (buttonClicked === "questionBox11") {
+		$('.modal-header').html(litQuestions[0].question);
+		$('#firstOption').html(litQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[0].choosableAnswers[3]);
+		i = 0;
+	} else if (buttonClicked === "questionBox12") {
+		$('.modal-header').html(litQuestions[1].question);
+		$('#firstOption').html(litQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[1].choosableAnswers[3]);
+		i = 1;
+	} else if (buttonClicked === "questionBox13") {
+		$('.modal-header').html(litQuestions[2].question);
+		$('#firstOption').html(litQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[2].choosableAnswers[3]);
+		i = 2;
+	} else if (buttonClicked === "questionBox14") {
+		$('.modal-header').html(litQuestions[3].question);
+		$('#firstOption').html(litQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[3].choosableAnswers[3]);
+		i = 3;
+	} else if (buttonClicked === "questionBox15") {
+		$('.modal-header').html(litQuestions[4].question);
+		$('#firstOption').html(litQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(litQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(litQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(litQuestions[4].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox21") {
+		$('.modal-header').html(worldCapitalQuestions[0].question);
+		$('#firstOption').html(worldCapitalQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(worldCapitalQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(worldCapitalQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(worldCapitalQuestions[0].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox22") {
+		$('.modal-header').html(worldCapitalQuestions[1].question);
+		$('#firstOption').html(worldCapitalQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(worldCapitalQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(worldCapitalQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(worldCapitalQuestions[1].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox23") {
+		$('.modal-header').html(worldCapitalQuestions[2].question);
+		$('#firstOption').html(worldCapitalQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(worldCapitalQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(worldCapitalQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(worldCapitalQuestions[2].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox24") {
+		$('.modal-header').html(worldCapitalQuestions[3].question);
+		$('#firstOption').html(worldCapitalQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(worldCapitalQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(worldCapitalQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(worldCapitalQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox25") {
+		$('.modal-header').html(worldCapitalQuestions[4].question);
+		$('#firstOption').html(worldCapitalQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(worldCapitalQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(worldCapitalQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(worldCapitalQuestions[4].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox31") {
+		$('.modal-header').html(movieQuestions[0].question);
+		$('#firstOption').html(movieQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(movieQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(movieQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(movieQuestions[0].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox32") {
+		$('.modal-header').html(movieQuestions[1].question);
+		$('#firstOption').html(movieQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(movieQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(movieQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(movieQuestions[1].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox33") {
+		$('.modal-header').html(movieQuestions[2].question);
+		$('#firstOption').html(movieQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(movieQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(movieQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(movieQuestions[2].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox34") {
+		$('.modal-header').html(movieQuestions[3].question);
+		$('#firstOption').html(movieQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(movieQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(movieQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(movieQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox35") {
+		$('.modal-header').html(movieQuestions[4].question);
+		$('#firstOption').html(movieQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(movieQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(movieQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(movieQuestions[4].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox41") {
+		$('.modal-header').html(theArtsQuestions[0].question);
+		$('#firstOption').html(theArtsQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(theArtsQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(theArtsQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(theArtsQuestions[0].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox42") {
+		$('.modal-header').html(theArtsQuestions[1].question);
+		$('#firstOption').html(theArtsQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(theArtsQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(theArtsQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(theArtsQuestions[1].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox43") {
+		$('.modal-header').html(theArtsQuestions[2].question);
+		$('#firstOption').html(theArtsQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(theArtsQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(theArtsQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(theArtsQuestions[2].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox44") {
+		$('.modal-header').html(theArtsQuestions[3].question);
+		$('#firstOption').html(theArtsQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(theArtsQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(theArtsQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(theArtsQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox45") {
+		$('.modal-header').html(theArtsQuestions[4].question);
+		$('#firstOption').html(theArtsQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(theArtsQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(theArtsQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(theArtsQuestions[4].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox51") {
+		$('.modal-header').html(wildAnimalQuestions[4].question);
+		$('#firstOption').html(wildAnimalQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[4].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox52") {
+		$('.modal-header').html(wildAnimalQuestions[0].question);
+		$('#firstOption').html(wildAnimalQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[0].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox53") {
+		$('.modal-header').html(wildAnimalQuestions[1].question);
+		$('#firstOption').html(wildAnimalQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[1].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox54") {
+		$('.modal-header').html(wildAnimalQuestions[2].question);
+		$('#firstOption').html(wildAnimalQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[2].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox55") {
+		$('.modal-header').html(wildAnimalQuestions[3].question);
+		$('#firstOption').html(wildAnimalQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox61") {
+		$('.modal-header').html(wildAnimalQuestions[0].question);
+		$('#firstOption').html(wildAnimalQuestions[0].choosableAnswers[0]);
+		$('#secondOption').html(wildAnimalQuestions[0].choosableAnswers[1]);
+		$('#thirdOption').html(wildAnimalQuestions[0].choosableAnswers[2]);
+		$('#fourthOption').html(wildAnimalQuestions[0].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox62") {
+		$('.modal-header').html(webDevelopmentQuestions[1].question);
+		$('#firstOption').html(webDevelopmentQuestions[1].choosableAnswers[0]);
+		$('#secondOption').html(webDevelopmentQuestions[1].choosableAnswers[1]);
+		$('#thirdOption').html(webDevelopmentQuestions[1].choosableAnswers[2]);
+		$('#fourthOption').html(webDevelopmentQuestions[1].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox63") {
+		$('.modal-header').html(webDevelopmentQuestions[2].question);
+		$('#firstOption').html(webDevelopmentQuestions[2].choosableAnswers[0]);
+		$('#secondOption').html(webDevelopmentQuestions[2].choosableAnswers[1]);
+		$('#thirdOption').html(webDevelopmentQuestions[2].choosableAnswers[2]);
+		$('#fourthOption').html(webDevelopmentQuestions[2].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox64") {
+		$('.modal-header').html(webDevelopmentQuestions[3].question);
+		$('#firstOption').html(webDevelopmentQuestions[3].choosableAnswers[0]);
+		$('#secondOption').html(webDevelopmentQuestions[3].choosableAnswers[1]);
+		$('#thirdOption').html(webDevelopmentQuestions[3].choosableAnswers[2]);
+		$('#fourthOption').html(webDevelopmentQuestions[3].choosableAnswers[3]);
+		i = 4;
+	} else if (buttonClicked === "questionBox65") {
+		$('.modal-header').html(webDevelopmentQuestions[4].question);
+		$('#firstOption').html(webDevelopmentQuestions[4].choosableAnswers[0]);
+		$('#secondOption').html(webDevelopmentQuestions[4].choosableAnswers[1]);
+		$('#thirdOption').html(webDevelopmentQuestions[4].choosableAnswers[2]);
+		$('#fourthOption').html(webDevelopmentQuestions[4].choosableAnswers[3]);
+		i = 4;
+	}; 
+})
 
 var $playerInput;
 $('.questionButton').on('click', function(event){
