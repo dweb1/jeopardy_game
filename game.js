@@ -503,7 +503,7 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("firstOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore += 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore += 20;
@@ -516,7 +516,7 @@ function testAnswer() {
 				};	
 			whatHappensAfterAnswer();
 		} else {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore -= 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore -= 20;
@@ -534,7 +534,7 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("secondOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore += 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore += 20;
@@ -547,7 +547,7 @@ function testAnswer() {
 				};	
 			whatHappensAfterAnswer();
 		} else {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore -= 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore -= 20;
@@ -565,7 +565,7 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("thirdOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore += 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore += 20;
@@ -578,7 +578,7 @@ function testAnswer() {
 				};	
 			whatHappensAfterAnswer();
 		} else {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore -= 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore -= 20;
@@ -596,7 +596,7 @@ function testAnswer() {
 		var grabAnswerElement = document.getElementById("fourthOption");
 		var answerClicked = grabAnswerElement.innerHTML;
 		if (answerClicked === litQuestions[i].rightAnswer || answerClicked === worldCapitalQuestions[i].rightAnswer || answerClicked === theArtsQuestions[i].rightAnswer || answerClicked === movieQuestions[i].rightAnswer || answerClicked === wildAnimalQuestions[i].rightAnswer || answerClicked === webDevelopmentQuestions[i].rightAnswer) {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore += 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore += 20;
@@ -609,7 +609,7 @@ function testAnswer() {
 				};	
 			whatHappensAfterAnswer();
 		} else {
-			if ($playerInput.slice(-1) === 1){
+			if ($playerInput.slice(-1) === "1"){
 					currentScore -= 10;
 				} else if ($playerInput.slice(-1) === "2") {
 					currentScore -= 20;
