@@ -3,9 +3,9 @@
 [Link to My Game!](http://dweb-jeopardy.bitballoon.com/)
 
 ## Wireframes
-!(http://i.imgur.com/iGYahiE.jpg)
-!(http://i.imgur.com/5HZwYAX.jpg)
-!(http://i.imgur.com/Hmyy1Nl.jpg)
+![alt-text](http://i.imgur.com/iGYahiE.jpg)
+![alt-text](http://i.imgur.com/5HZwYAX.jpg)
+![alt-text](http://i.imgur.com/Hmyy1Nl.jpg)
 http://imgur.com/a/cHZtC
 
 
